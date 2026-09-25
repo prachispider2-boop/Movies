@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Genres | CineVerse</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Orbitron:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-film"></i>
+            Cine<span>Verse</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="discover.html">
+                Discover
+            </a>
+
+            <a href="genres.html" class="active">
+                Genres
+            </a>
+
+            <a href="trending.html">
+                Trending
+            </a>
+
+            <a href="watchlist.html">
+                <i class="fa-regular fa-heart"></i>
+                Watchlist
+            </a>
+
+        </nav>
+
+        <button class="theme-button" id="themeButton">
+            <i class="fa-solid fa-palette"></i>
+        </button>
+
+        <button class="menu-button" id="menuButton">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- HEADER -->
+
+    <section class="page-header">
+
+        <span class="section-tag">
+            EXPLORE BY GENRE
+        </span>
+
+        <h1>
+            Find Your
+            <span>Kind of Story.</span>
+        </h1>
+
+        <p>
+            Pick a genre and let CineVerse find your next movie.
+        </p>
+
+    </section>
+
+
+    <!-- GENRES -->
+
+    <section class="genre-page">
+
+        <div class="genre-list">
+
+            <button class="genre-page-button active" data-genre="All">
+                All
+            </button>
+
+            <button class="genre-page-button" data-genre="Action">
+                <i class="fa-solid fa-bolt"></i>
+                Action
+            </button>
+
+            <button class="genre-page-button" data-genre="Romance">
+                <i class="fa-solid fa-heart"></i>
+                Romance
+            </button>
+
+            <button class="genre-page-button" data-genre="Comedy">
+                <i class="fa-solid fa-face-laugh"></i>
+                Comedy
+            </button>
+
+            <button class="genre-page-button" data-genre="Horror">
+                <i class="fa-solid fa-ghost"></i>
+                Horror
+            </button>
+
+            <button class="genre-page-button" data-genre="Fantasy">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                Fantasy
+            </button>
+
+            <button class="genre-page-button" data-genre="Sci-Fi">
+                <i class="fa-solid fa-rocket"></i>
+                Sci-Fi
+            </button>
+
+            <button class="genre-page-button" data-genre="Thriller">
+                <i class="fa-solid fa-eye"></i>
+                Thriller
+            </button>
+
+            <button class="genre-page-button" data-genre="Drama">
+                <i class="fa-solid fa-masks-theater"></i>
+                Drama
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- MOVIES -->
+
+    <main class="movie-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-tag">
+                    GENRE MOVIES
+                </span>
+
+                <h2 id="genreTitle">
+                    All Movies
+                </h2>
+
+            </div>
+
+        </div>
+
+        <div class="movie-grid" id="genreMovies">
+
+        </div>
+
+    </main>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

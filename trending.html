@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trending | CineVerse</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Orbitron:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-film"></i>
+            Cine<span>Verse</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="discover.html">
+                Discover
+            </a>
+
+            <a href="genres.html">
+                Genres
+            </a>
+
+            <a href="trending.html" class="active">
+                Trending
+            </a>
+
+            <a href="watchlist.html">
+                <i class="fa-regular fa-heart"></i>
+                Watchlist
+            </a>
+
+        </nav>
+
+        <button class="theme-button" id="themeButton">
+            <i class="fa-solid fa-palette"></i>
+        </button>
+
+        <button class="menu-button" id="menuButton">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- HEADER -->
+
+    <section class="page-header trending-header">
+
+        <span class="section-tag">
+            🔥 HOT RIGHT NOW
+        </span>
+
+        <h1>
+            What's
+            <span>Trending?</span>
+        </h1>
+
+        <p>
+            Movies everyone's talking about right now.
+        </p>
+
+    </section>
+
+
+    <!-- TRENDING MOVIES -->
+
+    <main class="movie-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-tag">
+                    TRENDING NOW
+                </span>
+
+                <h2>Popular Movies</h2>
+
+            </div>
+
+        </div>
+
+        <div class="movie-grid" id="trendingMovies">
+
+        </div>
+
+    </main>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

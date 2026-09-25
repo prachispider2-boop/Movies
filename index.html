@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineVerse | Discover Your Next Movie</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Orbitron:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="#" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-film"></i>
+            </span>
+
+            <span>
+                Cine<span>Verse</span>
+            </span>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="#" class="active">Home</a>
+
+            <a href="./discover.html">
+                Discover
+            </a>
+
+            <a href="./genres.html">
+                Genres
+            </a>
+
+            <a href="./trending.html">
+                Trending
+            </a>
+
+            <a href="./watchlist.html">
+                Watchlist
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <button class="icon-button" id="themeButton">
+                <i class="fa-solid fa-palette"></i>
+            </button>
+
+            <button class="icon-button menu-button" id="menuButton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+
+        <section class="hero" id="discover">
+
+            <div class="hero-content">
+
+
+                <div class="hero-tag">
+
+                    <span class="pulse"></span>
+
+                    MOVIES. STORIES. DISCOVERY.
+
+                </div>
+
+
+                <h1>
+
+                    Discover Movies
+                    <br>
+
+                    <span>Beyond the Screen.</span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Explore thousands of stories, discover hidden
+                    gems, and find your next movie obsession.
+
+                </p>
+
+
+                <!-- SEARCH -->
+
+                <div class="search-container">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search movies, actors, genres...">
+
+                    <button id="searchButton">
+
+                        Search
+
+                    </button>
+
+                </div>
+
+
+                <!-- QUICK ACTIONS -->
+
+                <div class="hero-actions">
+
+                    <button class="surprise-button" id="surpriseButton">
+
+                        <i class="fa-solid fa-dice"></i>
+
+                        Surprise Me
+
+                    </button>
+
+
+                    <button class="explore-button">
+
+                        Explore Movies
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual">
+
+
+                <div class="glow-circle"></div>
+
+
+                <div class="film-reel">
+
+                    <i class="fa-solid fa-film"></i>
+
+                </div>
+
+
+                <div class="floating-element rating-card">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <div>
+
+                        <strong>9.2</strong>
+
+                        <small>Top Rated</small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="floating-element trending-card">
+
+                    <i class="fa-solid fa-fire"></i>
+
+                    <span>Trending</span>
+
+                </div>
+
+
+                <div class="floating-element ticket-card">
+
+                    <i class="fa-solid fa-ticket"></i>
+
+                    <span>Tonight?</span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= GENRES ================= -->
+
+        <section class="section" id="genres">
+
+    <div class="section-header">
+
+        <div>
+            <span class="section-label">EXPLORE</span>
+
+            <h2>
+                Browse by <span>Genre</span>
+            </h2>
+        </div>
+
+        <button class="view-all" id="viewAllMovies">
+            View All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+
+    <div class="genre-container">
+
+        <button class="genre active" data-genre="all">
+            <i class="fa-solid fa-fire"></i>
+            Trending
+        </button>
+
+        <button class="genre" data-genre="Action">
+            <i class="fa-solid fa-bolt"></i>
+            Action
+        </button>
+
+        <button class="genre" data-genre="Romance">
+            <i class="fa-solid fa-heart"></i>
+            Romance
+        </button>
+
+        <button class="genre" data-genre="Comedy">
+            <i class="fa-solid fa-face-laugh"></i>
+            Comedy
+        </button>
+
+        <button class="genre" data-genre="Horror">
+            <i class="fa-solid fa-ghost"></i>
+            Horror
+        </button>
+
+        <button class="genre" data-genre="Fantasy">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            Fantasy
+        </button>
+
+        <button class="genre" data-genre="Sci-Fi">
+            <i class="fa-solid fa-rocket"></i>
+            Sci-Fi
+        </button>
+
+        <button class="genre" data-genre="Thriller">
+            <i class="fa-solid fa-brain"></i>
+            Thriller
+        </button>
+
+        <button class="genre" data-genre="Drama">
+            <i class="fa-solid fa-masks-theater"></i>
+            Drama
+        </button>
+
+    </div>
+
+</section>
+
+
+
+        <!-- ================= TRENDING MOVIES ================= -->
+
+        <section class="section" id="trending">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <span class="section-label">
+                        WHAT'S HOT
+                    </span>
+
+                    <h2>
+                        Trending <span>Now</span>
+                    </h2>
+
+                </div>
+
+
+                <button class="view-all">
+
+                    See All
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+
+            <div class="movie-grid">
+
+
+                <!-- MOVIE 1 -->
+
+                <article class="movie-card" data-genre="Trending">
+
+
+                    <div class="poster-container">
+
+                        <img
+                            src="./hanumanansh.jpg"
+                            alt="Interstellar">
+
+                        <span class="movie-badge">
+                            TRENDING
+                        </span>
+
+
+                        <button class="watch-button">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <div class="poster-overlay">
+
+                            <button class="details-button">
+
+                                View Details
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="movie-info">
+
+                        <h3>
+                            Hanuman ansh
+                        </h3>
+
+                        <div class="movie-meta">
+
+                            <span class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                8.7
+                            </span>
+
+                            <span>
+                                2026
+                            </span>
+
+                            <span>
+                                Spiritual
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MOVIE 2 -->
+
+                <article class="movie-card" data-genre="Fantasy">
+
+                    <div class="poster-container">
+
+                        <img
+                            src="./coco.jpg"
+                            alt="Inception">
+
+                        <span class="movie-badge">
+                            TOP RATED FOR KIDS
+                        </span>
+
+                        <button class="watch-button">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <div class="poster-overlay">
+
+                            <button class="details-button">
+
+                                View Details
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="movie-info">
+
+                        <h3>
+                            Coco
+                        </h3>
+
+                        <div class="movie-meta">
+
+                            <span class="rating">
+
+                                <i class="fa-solid fa-star"></i>
+
+                                8.8
+
+                            </span>
+
+                            <span>
+                                2010
+                            </span>
+
+                            <span>
+                                Family-kids
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MOVIE 3 -->
+
+                <article class="movie-card" data-genre="Action">
+
+                    <div class="poster-container">
+
+                        <img
+                            src="./ironman.jpg"
+                            alt="The Batman">
+
+                        <span class="movie-badge">
+                            POPULAR
+                        </span>
+
+
+                        <button class="watch-button">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <div class="poster-overlay">
+
+                            <button class="details-button">
+
+                                View Details
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="movie-info">
+
+                        <h3>
+                            Iron man
+                        </h3>
+
+                        <div class="movie-meta">
+
+                            <span class="rating">
+
+                                <i class="fa-solid fa-star"></i>
+
+                                9.8
+
+                            </span>
+
+                            <span>
+                                2022
+                            </span>
+
+                            <span>
+                                Action
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MOVIE 4 -->
+
+                <article class="movie-card" data-genre="Action">
+
+                    <div class="poster-container">
+
+                        <img
+                            src="./batman.jpg"
+                            alt="Spirited Away">
+
+                        <span class="movie-badge">
+                             FAVORITE
+                        </span>
+
+
+                        <button class="watch-button">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <div class="poster-overlay">
+
+                            <button class="details-button">
+
+                                View Details
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="movie-info">
+
+                        <h3>
+                            The Dark Knight
+                        </h3>
+
+                        <div class="movie-meta">
+
+                            <span class="rating">
+
+                                <i class="fa-solid fa-star"></i>
+
+                                8.6
+
+                            </span>
+
+                            <span>
+                                2001
+                            </span>
+
+                            <span>
+                                Action
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MOVIE 5 -->
+
+                <article class="movie-card" data-genre="Romantic">
+
+                    <div class="poster-container">
+
+                        <img
+                            src="./barfi.jpg"
+                            alt="Dune">
+
+                        <span class="movie-badge">
+                            Romantic Comedy
+                        </span>
+
+
+                        <button class="watch-button">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <div class="poster-overlay">
+
+                            <button class="details-button">
+
+                                View Details
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="movie-info">
+
+                        <h3>
+                           Barfi
+                        </h3>
+
+                        <div class="movie-meta">
+
+                            <span class="rating">
+
+                                <i class="fa-solid fa-star"></i>
+
+                                8.0
+
+                            </span>
+
+                            <span>
+                                2021
+                            </span>
+
+                            <span>
+                                Comedy Romantic
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MOVIE 6 -->
+
+                <article class="movie-card" data-genre="Drama">
+
+                    <div class="poster-container">
+
+                        <img
+                            src="./cruella.jpg"
+                            alt="Oppenheimer">
+
+                        <span class="movie-badge">
+                            AWARD WINNER
+                        </span>
+
+
+                        <button class="watch-button">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <div class="poster-overlay">
+
+                            <button class="details-button">
+
+                                View Details
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="movie-info">
+
+                        <h3>
+                            Cruella
+                        </h3>
+
+                        <div class="movie-meta">
+
+                            <span class="rating">
+
+                                <i class="fa-solid fa-star"></i>
+
+                                8.6
+
+                            </span>
+
+                            <span>
+                                2023
+                            </span>
+
+                            <span>
+                                Drama Power
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MOVIE 7 -->
+
+                <article class="movie-card">
+
+                    <div class="poster-container" data-genre="Drama">
+
+                        <img
+                            src="./dead poet society.jpg"
+                            alt="La La Land">
+
+                        <span class="movie-badge">
+                            coming-of-age drama
+                        </span>
+
+
+                        <button class="watch-button">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <div class="poster-overlay">
+
+                            <button class="details-button">
+
+                                View Details
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="movie-info">
+
+                        <h3>
+                           Dead Poet Society
+                        </h3>
+
+                        <div class="movie-meta">
+
+                            <span class="rating">
+
+                                <i class="fa-solid fa-star"></i>
+
+                                8.0
+
+                            </span>
+
+                            <span>
+                                2016
+                            </span>
+
+                            <span>
+                                coming-of-age drama
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MOVIE 8 -->
+
+                <article class="movie-card">
+
+                    <div class="poster-container" data-genre="Fantasy">
+
+                        <img
+                            src="./enola holmes.jpg"
+                            alt="Joker">
+
+                        <span class="movie-badge">
+                            mystery-adventure
+                        </span>
+
+
+                        <button class="watch-button">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <div class="poster-overlay">
+
+                            <button class="details-button">
+
+                                View Details
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="movie-info">
+
+                        <h3>
+                            Elena Holmes
+                        </h3>
+
+                        <div class="movie-meta">
+
+                            <span class="rating">
+
+                                <i class="fa-solid fa-star"></i>
+
+                                8.3
+
+                            </span>
+
+                            <span>
+                                2019
+                            </span>
+
+                            <span>
+                                mystery-adventure
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= MOOD SECTION ================= -->
+
+        <section class="mood-section">
+
+
+            <div class="mood-content">
+
+                <span class="section-label">
+                    CAN'T DECIDE?
+                </span>
+
+                <h2>
+                    What's your <span>mood?</span>
+                </h2>
+
+                <p>
+
+                    Tell us what you're feeling and discover
+                    a movie that matches your vibe.
+
+                </p>
+
+
+                <button class="mood-button">
+
+                    Explore by Mood
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+
+            <div class="mood-visual">
+
+                <div class="neon-ring"></div>
+
+                <i class="fa-solid fa-clapperboard"></i>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+
+            <i class="fa-solid fa-film"></i>
+
+            CineVerse
+
+        </div>
+
+
+        <p>
+            Discover stories. Find your next obsession.
+        </p>
+
+
+        <div class="social-icons">
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Watchlist | CineVerse</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Orbitron:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <i class="fa-solid fa-film"></i>
+
+            Cine<span>Verse</span>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="discover.html">
+                Discover
+            </a>
+
+            <a href="genres.html">
+                Genres
+            </a>
+
+            <a href="trending.html">
+                Trending
+            </a>
+
+            <a href="watchlist.html" class="active">
+
+                <i class="fa-solid fa-heart"></i>
+
+                Watchlist
+
+            </a>
+
+        </nav>
+
+
+        <button class="theme-button" id="themeButton">
+
+            <i class="fa-solid fa-palette"></i>
+
+        </button>
+
+
+        <button class="menu-button" id="menuButton">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </header>
+
+
+    <!-- HEADER -->
+
+    <section class="page-header">
+
+        <span class="section-tag">
+            YOUR COLLECTION
+        </span>
+
+        <h1>
+            Your
+            <span>Watchlist.</span>
+        </h1>
+
+        <p>
+            Movies you've saved for your next movie night.
+        </p>
+
+    </section>
+
+
+    <!-- WATCHLIST -->
+
+    <main class="movie-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-tag">
+                    SAVED MOVIES
+                </span>
+
+                <h2>My Watchlist</h2>
+
+            </div>
+
+            <span id="watchlistCount" class="movie-count"></span>
+
+        </div>
+
+
+        <div
+            class="movie-grid"
+            id="watchlistMovies">
+        </div>
+
+
+        <!-- EMPTY STATE -->
+
+        <div
+            class="empty-watchlist"
+            id="emptyWatchlist">
+
+            <div class="empty-icon">
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <h3>Your watchlist is empty</h3>
+
+            <p>
+                Found something interesting?
+                Hit the ❤️ button and save it here.
+            </p>
+
+            <a href="discover.html" class="primary-button">
+                Discover Movies
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
